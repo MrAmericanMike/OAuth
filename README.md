@@ -4,6 +4,8 @@
 
 Examples and implementation for different OAuth flows.
 
+This repo is just as a reference and also as a practice on how to implement different authorization flows. I'm not expert whatsoever and my implementation may have many flaws. Please feel free to contribute to the project by pointing out mistakes, errors, corrections, better documentation, etc.
+
 ---
 
 ## Spotify

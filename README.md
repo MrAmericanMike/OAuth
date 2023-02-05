@@ -1,5 +1,7 @@
 # OAuth
 
+> ## **All examples should be checked by experts and don't imply proper implementation**
+
 Examples and implementation for different OAuth flows.
 
 ---

@@ -9,7 +9,10 @@ Examples and implementation for different OAuth flows.
 Pre-requisites:
 
 -   Spotify APP Registered in the [Developers Dashboard](https://developer.spotify.com/dashboard/applications)
+
 -   Client-ID (This is ok to be public)
+
+-   On the Edit Settings for your App add `http://localhost:3000` to your Redirect URIs. (Don't forget to Save and adjust the port to fit your needs) We will be using [Vercel](https://vercel.com) to test locally and as a deployed application
 
 > ### Implicit Grant Flow
 

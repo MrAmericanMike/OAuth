@@ -1,6 +1,6 @@
 # Spotify - Implicit Grant Flow
 
-Set your own Client ID in `js/credentials.example.js` and save the file as `js/credentials.js`
+Set your own Client ID and PORT in `js/credentials.example.js` and save the file as `js/credentials.js`
 
 Notice that setting the `href` for the Login link using JavaScript isn't necessary but just something I'm doing to not distribute the Client ID with this repo. (Even when they can be public)
 
@@ -10,6 +10,12 @@ From within this folder:
 
 ```sh
 vercel dev
+```
+
+To use a different PORT use:
+
+```sh
+vercel dev -l 8888
 ```
 
 Connect to a new Vercel project.

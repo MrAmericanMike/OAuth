@@ -33,7 +33,7 @@ if (PARAMS.searchParams.get("access_token")) {
 	const TOKEN = PARAMS.searchParams.get("access_token");
 	const STATE = PARAMS.searchParams.get("state");
 	const LOCAL_STATE = window.localStorage.getItem("SpotifyState");
-	// This removed the params from the URL
+	// This removes the params from the URL
 	window.history.replaceState({}, document.title, window.location.pathname);
 
 	if (STATE === LOCAL_STATE) {

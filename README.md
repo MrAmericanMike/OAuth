@@ -4,7 +4,11 @@
 
 Examples and implementation for different OAuth flows.
 
-This repo is just as a reference and also as a practice on how to implement different authorization flows. I'm not expert whatsoever and my implementation may have many flaws. Please feel free to contribute to the project by pointing out mistakes, errors, corrections, better documentation, etc.
+This repo is just as a reference and also as a practice on how to implement different authorization flows. I'm not expert whatsoever and my implementation may have many flaws.
+
+Please feel free to contribute to the project by pointing out mistakes, errors, corrections, better documentation, etc.
+
+Notice that the provided examples also have minimal to none error handling.
 
 ---
 
@@ -13,10 +17,9 @@ This repo is just as a reference and also as a practice on how to implement diff
 Pre-requisites:
 
 -   Spotify APP Registered in the [Developers Dashboard](https://developer.spotify.com/dashboard/applications)
-
 -   Client-ID (This is ok to be public)
-
--   On the Edit Settings for your App add `http://localhost:3000` to your Redirect URIs. (Don't forget to Save and adjust the port to fit your needs) We will be using [Vercel](https://vercel.com) to test locally and as a deployed application
+-   Client-Secret (This is meant to be private and used only server side) Not all flows require it
+-   On the Edit Settings for your App add `http://localhost:3000` and `http://localhost:3000/api/spotify/callback` to your Redirect URIs. (Don't forget to Save and adjust the port to fit your needs) We will be using [Vercel](https://vercel.com) to test locally and as a deployed application. When deployed add the corresponding URIs from the App Dashboard
 
 > ### Implicit Grant Flow
 
@@ -30,5 +33,17 @@ Pre-requisites:
 [Spotify Documentation](https://developer.spotify.com/documentation/general/guides/authorization/implicit-grant/)
 
 PS: Use [Authorization Code](https://oauth.net/2/grant-types/authorization-code/) with [PKCE](https://oauth.net/2/pkce/) instead. (Example pending)
+
+---
+
+> ### Authorization Code Flow
+
+-   Server needed
+
+> Example in folder: `Spotify/AuthorizationCodeFlow`
+
+[OAuth Documentation](https://oauth.net/2/grant-types/authorization-code/)
+
+[Spotify Documentation](https://developer.spotify.com/documentation/general/guides/authorization/code-flow/)
 
 ---

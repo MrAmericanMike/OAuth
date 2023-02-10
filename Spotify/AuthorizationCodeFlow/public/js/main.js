@@ -1,5 +1,3 @@
-import Credentials from "./credentials.js";
-
 const AVATAR = document.querySelector("#avatar");
 const USER = document.querySelector("#user");
 const INFO = document.querySelector("#info");

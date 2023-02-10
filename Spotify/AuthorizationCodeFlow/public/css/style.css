@@ -1,0 +1,20 @@
+nav {
+	align-items: baseline;
+}
+
+a[role=button] {
+	height: fit-content;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+#avatar {
+	background-color: var(--primary);
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+}

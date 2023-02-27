@@ -21,7 +21,7 @@ Pre-requisites:
 -   Client-Secret (This is meant to be private and used only server side) Not all flows require it
 -   On the Edit Settings for your App add `http://localhost:3000` and `http://localhost:3000/api/spotify/callback` to your Redirect URIs. (Don't forget to Save and adjust the port to fit your needs) We will be using [Vercel](https://vercel.com) to test locally and as a deployed application. When deployed add the corresponding URIs from the App Dashboard.
 
-> ### Implicit Grant Flow
+> ### Spotify Implicit Grant Flow
 
 -   No server needed
 -   No recommended this days
@@ -36,7 +36,7 @@ PS: Use [Authorization Code](https://oauth.net/2/grant-types/authorization-code/
 
 ---
 
-> ### Authorization Code Flow
+> ### Spotify Authorization Code Flow
 
 -   Server needed
 
@@ -48,7 +48,7 @@ PS: Use [Authorization Code](https://oauth.net/2/grant-types/authorization-code/
 
 ---
 
-> ### Authorization Code Flow PKCE
+> ### Spotify Authorization Code Flow PKCE
 
 -   No server needed
 -   Safer than Implicit Grant Flow
@@ -61,7 +61,7 @@ PS: Use [Authorization Code](https://oauth.net/2/grant-types/authorization-code/
 
 ---
 
-> ### Authorization Code Flow PKCE (With Server) Example pending
+> ### Spotify Authorization Code Flow PKCE (With Server) Example pending
 
 ---
 
@@ -73,3 +73,17 @@ Pre-requisites:
 -   Client-ID (This is ok to be public)
 -   Client-Secret (This is meant to be private and used only server side) Not all flows require it
 -   On the Edit Settings for your App add `http://localhost:3000` and `http://localhost:3000/api/twitch/callback` to your Redirect URIs. (Don't forget to Save and adjust the port to fit your needs) We will be using [Vercel](https://vercel.com) to test locally and as a deployed application. When deployed add the corresponding URIs from the App Dashboard.
+
+---
+
+> ### Twitch Authorization Code Flow
+
+-   Server needed
+
+> Example in folder: `Twitch/AuthorizationCodeFlow`
+
+[OAuth Documentation](https://oauth.net/2/grant-types/authorization-code/)
+
+[Twitch Documentation](https://dev.twitch.tv/docs/authentication/getting-tokens-oauth/#authorization-code-grant-flow)
+
+---

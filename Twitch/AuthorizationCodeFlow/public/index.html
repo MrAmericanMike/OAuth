@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Spotify · Implicit Grant Flow</title>
+		<title>Twitch · Authorization Code Flow</title>
 		<link rel="shortcut icon" href="favicon.png" type="image/png" />
 		<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css" />
 		<link rel="stylesheet" href="css/theme.css" />
@@ -15,8 +15,9 @@
 	<body>
 		<main class="container">
 			<nav>
-				<h1>Spotify · Implicit Grant Flow</h1>
-				<a id="login" role="button">LOGIN</a>
+				<h1>Twitch · Authorization Code Flow</h1>
+				<a href="/api/twitch/login" role="button">LOGIN</a>
+				<button id="refresh">REFRESH</button>
 			</nav>
 			<article>
 				<header><img id="avatar" src="user.png" />Username:<span id="user"></span></header>

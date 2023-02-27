@@ -1,0 +1,29 @@
+nav {
+	align-items: baseline;
+}
+
+a[role=button] {
+	height: fit-content;
+}
+
+button {
+	width: fit-content;
+	height: fit-content;
+	margin-right: inherit;
+	margin-left: inherit;
+	padding: var(--nav-link-spacing-vertical) var(--nav-link-spacing-horizontal);
+	margin-left: 0.25rem;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+#avatar {
+	background-color: var(--primary);
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+}
